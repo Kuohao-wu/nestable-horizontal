@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <div class="dd" id="nestable3">
+    <ol class="dd-list">
+      <li class="dd-item dd3-item" data-id="13">
+        <div class="dd-handle dd3-handle">Drag</div>
+        <div class="dd3-content">Item 13</div>
+      </li>
+      <li class="dd-item dd3-item" data-id="14">
+        <div class="dd-handle dd3-handle">Drag</div>
+        <div class="dd3-content">Item 14</div>
+      </li>
+      <li class="dd-item dd3-item" data-id="15">
+        <div class="dd-handle dd3-handle">Drag</div>
+        <div class="dd3-content">Item 15</div>
+      </li>
+    </ol>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+  <script src="jquery.nestable.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#nestable3').nestable({
+      maxDepth: 1
+    });
+  })
+  </script>
+</body>
+
+</html>
